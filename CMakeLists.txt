@@ -72,6 +72,7 @@ function(addExample name)
 endfunction()
 
 # Build the actual examples.
+addExample(helloWorldSTDIO         src/00ivan/main.c)
 addExample(chapter00_helloWorld    src/00_helloWorld/main.c)
 addExample(chapter01_basicGraphics src/01_basicGraphics/main.c)
 addExample(chapter02_doubleBuffer  src/02_doubleBuffer/main.c)
