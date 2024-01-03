@@ -72,7 +72,6 @@ function(addExample name)
 endfunction()
 
 # Build the actual examples.
-addExample(helloWorldSTDIO         src/00ivan/main.c)
 addExample(chapter00_helloWorld    src/00_helloWorld/main.c)
 addExample(chapter01_basicGraphics src/01_basicGraphics/main.c)
 addExample(chapter02_doubleBuffer  src/02_doubleBuffer/main.c)
@@ -83,6 +82,7 @@ addExample(chapter06_fonts         src/06_fonts/main.c src/06_fonts/gpu.c)
 addExample(chapter07_orderingTable src/07_orderingTable/main.c src/07_orderingTable/gpu.c)
 addExample(chapter08_spinningCube  src/08_spinningCube/main.c src/08_spinningCube/gpu.c src/08_spinningCube/trig.c)
 addExample(chapter09_controllers   src/09_controllers/main.c src/09_controllers/gpu.c src/09_controllers/font.c)
+addExample(chapter10_bios_Printf   src/10_bios_printf/main.c)
 
 # Define more helper functions to embed binary data into executables and convert
 # images into raw texture and palette data.

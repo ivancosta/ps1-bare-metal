@@ -12,24 +12,12 @@
  * LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
  * OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
  * PERFORMANCE OF THIS SOFTWARE.
- *
- *
- * Let's start with the absolute basics, the obligatory hello world program. We
- * are going to just print "Hello world!" in an infinite loop; since we don't
- * have the luxury of a terminal or even anything resembling a "text mode" on
- * the GPU, we'll use the PS1's serial port instead.
- *
- * The serial port can be found on the back of the console on all models except
- * the PSone, and can be connected to a PC with an appropriately modified link
- * cable. Internally it is connected to the secondary serial interface, known as
- * SIO1 (as opposed to SIO0 which is wired to the controller and memory card
- * ports). SIO1 is controlled through I/O registers, which we're going to
- * manipulate to get it to output our message.
  */
-
+ 
 /**
- * Print the string using the A0 bios function 3F (printf) to the SIOCON0
- * Output is visible in PSX emulators 
+ * Print the string to the SIOCON0 (stdout) using the kernel/BIOS A-function  
+ * A0 bios function 3F (printf) 
+ * Output is available through a separate window in mostly all PSX emulators 
  * 
  * @author Ivan Francisco Coutinho Costa
  * @param msg 
